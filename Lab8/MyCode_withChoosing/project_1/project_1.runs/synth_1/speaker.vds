@@ -1,0 +1,286 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Dec 19 14:32:29 2020
+# Process ID: 4976
+# Current directory: D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log speaker.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source speaker.tcl
+# Log file: D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/project_1/project_1.runs/synth_1/speaker.vds
+# Journal file: D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source speaker.tcl -notrace
+Command: synth_design -top speaker -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 6080
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1025.371 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'speaker' [D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/speaker.v:4]
+	Parameter PAUSE bound to: 2'b00 
+	Parameter PLAY_SMOOTH bound to: 2'b01 
+	Parameter PLAY_C_SMOOTH bound to: 2'b10 
+	Parameter C bound to: 4'b0000 
+	Parameter D bound to: 4'b0001 
+	Parameter E bound to: 4'b0010 
+	Parameter F bound to: 4'b0011 
+	Parameter G bound to: 4'b0100 
+	Parameter A bound to: 4'b0101 
+	Parameter B bound to: 4'b0110 
+	Parameter hyphen bound to: 4'b0111 
+	Parameter Err bound to: 4'b1000 
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/clock_divider.v:2]
+	Parameter n bound to: 15 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (1#1) [D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/clock_divider.v:2]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider__parameterized0' [D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/clock_divider.v:2]
+	Parameter n bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider__parameterized0' (1#1) [D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/clock_divider.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Debounce' [D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/debounce.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Debounce' (2#1) [D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/debounce.v:4]
+INFO: [Synth 8-6157] synthesizing module 'One_Pulse' [D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/onepulse.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'One_Pulse' (3#1) [D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/onepulse.v:4]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider__parameterized1' [D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/clock_divider.v:2]
+	Parameter n bound to: 22 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider__parameterized1' (3#1) [D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/clock_divider.v:2]
+INFO: [Synth 8-6157] synthesizing module 'player_control' [D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/player_control.v:3]
+	Parameter LEN bound to: 512 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'player_control' (4#1) [D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/player_control.v:3]
+INFO: [Synth 8-6157] synthesizing module 'music_0' [D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/music_example0.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'music_0' (5#1) [D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/music_example0.v:3]
+INFO: [Synth 8-6157] synthesizing module 'music_1' [D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/music_example1.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'music_1' (6#1) [D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/music_example1.v:3]
+INFO: [Synth 8-6157] synthesizing module 'note_gen' [D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/note_gen.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'note_gen' (7#1) [D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/note_gen.v:3]
+INFO: [Synth 8-6157] synthesizing module 'speaker_control' [D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/speaker_control.v:3]
+INFO: [Synth 8-226] default block is never used [D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/speaker_control.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'speaker_control' (8#1) [D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/speaker_control.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'speaker' (9#1) [D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/speaker.v:4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1025.371 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1025.371 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1025.371 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1025.371 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/speaker.xdc]
+Finished Parsing XDC File [D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/speaker.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/speaker.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/speaker_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/speaker_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1038.305 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1038.305 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1038.305 ; gain = 12.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1038.305 ; gain = 12.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1038.305 ; gain = 12.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1038.305 ; gain = 12.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   22 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
+	   2 Input    1 Bit       Adders := 1     
++---Registers : 
+	               22 Bit    Registers := 1     
+	               16 Bit    Registers := 4     
+	               12 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 9     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 4     
+	   3 Input   32 Bit        Muxes := 2     
+	 514 Input   26 Bit        Muxes := 4     
+	   2 Input   22 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 6     
+	   7 Input   16 Bit        Muxes := 2     
+	   7 Input   14 Bit        Muxes := 2     
+	   2 Input   12 Bit        Muxes := 6     
+	   6 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   9 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 9     
+	   3 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 1     
+	   7 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1038.305 ; gain = 12.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:07 ; elapsed = 00:01:13 . Memory (MB): peak = 1038.305 ; gain = 12.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:01:14 . Memory (MB): peak = 1038.305 ; gain = 12.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:08 ; elapsed = 00:01:15 . Memory (MB): peak = 1065.988 ; gain = 40.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:19 ; elapsed = 00:01:26 . Memory (MB): peak = 1071.543 ; gain = 46.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:19 ; elapsed = 00:01:26 . Memory (MB): peak = 1071.543 ; gain = 46.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:19 ; elapsed = 00:01:26 . Memory (MB): peak = 1071.543 ; gain = 46.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:19 ; elapsed = 00:01:27 . Memory (MB): peak = 1071.543 ; gain = 46.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:19 ; elapsed = 00:01:27 . Memory (MB): peak = 1071.543 ; gain = 46.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:19 ; elapsed = 00:01:27 . Memory (MB): peak = 1071.543 ; gain = 46.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   497|
+|3     |LUT1   |    56|
+|4     |LUT2   |   421|
+|5     |LUT3   |   527|
+|6     |LUT4   |   224|
+|7     |LUT5   |   257|
+|8     |LUT6   |   661|
+|9     |MUXF7  |     2|
+|10    |FDCE   |    93|
+|11    |FDPE   |    16|
+|12    |FDRE   |    77|
+|13    |IBUF   |    11|
+|14    |OBUF   |    31|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:19 ; elapsed = 00:01:27 . Memory (MB): peak = 1071.543 ; gain = 46.172
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:01 ; elapsed = 00:01:21 . Memory (MB): peak = 1071.543 ; gain = 33.238
+Synthesis Optimization Complete : Time (s): cpu = 00:01:20 ; elapsed = 00:01:27 . Memory (MB): peak = 1071.543 ; gain = 46.172
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.140 . Memory (MB): peak = 1071.543 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 499 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1071.543 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+38 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:35 ; elapsed = 00:02:07 . Memory (MB): peak = 1071.543 ; gain = 46.172
+INFO: [Common 17-1381] The checkpoint 'D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/project_1/project_1.runs/synth_1/speaker.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file speaker_utilization_synth.rpt -pb speaker_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 19 14:34:42 2020...

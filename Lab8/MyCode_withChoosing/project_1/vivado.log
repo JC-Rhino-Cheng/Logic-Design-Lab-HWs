@@ -1,0 +1,74 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Dec 19 13:36:11 2020
+# Process ID: 20220
+# Current directory: D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14912 D:\Logic_Design_Lab\Lab8\MyCode_withChoosing\project_1\project_1.xpr
+# Log file: D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/project_1/vivado.log
+# Journal file: D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/project_1/project_1.srcs/sources_1'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:08 . Memory (MB): peak = 1024.930 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.1
+  **** Build date : May 27 2020 at 20:24:38
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2020.1.0
+  **** Build date : May 14 2020-09:10:29
+    ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1024.930 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183711728A
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2225.465 ; gain = 1200.535
+set_property PROGRAM.FILE {D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/project_1/project_1.runs/impl_1/speaker.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/project_1/project_1.runs/impl_1/speaker.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sat Dec 19 14:32:23 2020] Launched synth_1...
+Run output will be captured here: D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/project_1/project_1.runs/synth_1/runme.log
+[Sat Dec 19 14:32:24 2020] Launched impl_1...
+Run output will be captured here: D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/project_1/project_1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Logic_Design_Lab/Lab8/MyCode_withChoosing/project_1/project_1.runs/impl_1/speaker.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183711728A
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 19 14:47:43 2020...

@@ -1,0 +1,86 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Tue Nov 10 16:06:46 2020
+| Host         : Neilsons running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file lab5_control_sets_placed.rpt
+| Design       : lab5
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |     8 |
+|    Minimum number of control sets                        |     8 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    24 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |     8 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     3 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              64 |           19 |
+| No           | No                    | Yes                    |              27 |           11 |
+| No           | Yes                   | No                     |               1 |            1 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               4 |            3 |
+| Yes          | Yes                   | No                     |              16 |            6 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------+-----------------+------------------+------------------+----------------+--------------+
+|                 Clock Signal                 |  Enable Signal  | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------------------------------+-----------------+------------------+------------------+----------------+--------------+
+|  slowed_clk_for_4bits_flushing/out[0]        |                 | DIGIT_OBUF[2]    |                1 |              1 |         1.00 |
+|  slowed_clk_for_3_states/slowed_for_3_states | o_c_down/E[0]   | rst_IBUF         |                3 |              4 |         1.33 |
+|  slowed_clk_for_4bits_flushing/out[0]        |                 |                  |                2 |              8 |         4.00 |
+|  slowed_clk_for_3_states/auto_clk            |                 | rst_IBUF         |                7 |             13 |         1.86 |
+|  clk_IBUF_BUFG                               |                 | rst_IBUF         |                4 |             14 |         3.50 |
+|  clk_IBUF_BUFG                               | LED[15]_i_2_n_0 | LED[15]_i_1_n_0  |                6 |             16 |         2.67 |
+|  slowed_clk_for_3_states/slowed_for_3_states |                 |                  |                6 |             21 |         3.50 |
+|  clk_IBUF_BUFG                               |                 |                  |               11 |             35 |         3.18 |
++----------------------------------------------+-----------------+------------------+------------------+----------------+--------------+
+
+

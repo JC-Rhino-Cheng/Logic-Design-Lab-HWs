@@ -1,0 +1,97 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Dec 15 11:00:16 2020
+# Process ID: 10408
+# Current directory: C:/Users/User/OneDrive - 清華大學/大二上/必修-邏輯設計實驗/Labs/Lab6/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log lab6.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab6.tcl
+# Log file: C:/Users/User/OneDrive - 清華大學/大二上/必修-邏輯設計實驗/Labs/Lab6/project_1/project_1.runs/synth_1/lab6.vds
+# Journal file: C:/Users/User/OneDrive - 清華大學/大二上/必修-邏輯設計實驗/Labs/Lab6/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source lab6.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/User/OneDrive - 清華大學/大二上/必修-邏輯設計實驗/Labs/Lab6/KeyboardSampleCode/KeyboardSampleCode/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/User/OneDrive - 清華大學/大二上/必修-邏輯設計實驗/Labs/Lab6/project_1/project_1.cache/ip 
+Command: synth_design -top lab6 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 15596
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1027.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'lab6' [C:/Users/User/OneDrive - 清華大學/大二上/必修-邏輯設計實驗/Labs/Lab6/lab6.v:101]
+	Parameter KB_right_1 bound to: 9'b001101001 
+	Parameter KB_right_2 bound to: 9'b001110010 
+	Parameter KB_right_3 bound to: 9'b001111010 
+	Parameter show_nothing bound to: 4'b0000 
+	Parameter at_1 bound to: 4'b0001 
+	Parameter at_2 bound to: 4'b0010 
+	Parameter at_3 bound to: 4'b0011 
+	Parameter clockwise_anime_1 bound to: 4'b0100 
+	Parameter clockwise_anime_2 bound to: 4'b0101 
+	Parameter clockwise_anime_3 bound to: 4'b0110 
+	Parameter clockwise_anime_4 bound to: 4'b0111 
+	Parameter clockwise_freeze bound to: 4'b1000 
+	Parameter c_clockwise_anime_1 bound to: 4'b1001 
+	Parameter c_clockwise_anime_2 bound to: 4'b1010 
+	Parameter c_clockwise_anime_3 bound to: 4'b1011 
+	Parameter c_clockwise_anime_4 bound to: 4'b1100 
+	Parameter c_clockwise_freeze bound to: 4'b1101 
+	Parameter STAY bound to: 2'b00 
+	Parameter CLOCKWISE bound to: 2'b01 
+	Parameter C_CLOCKWISE bound to: 2'b10 
+	Parameter auto bound to: 1'b0 
+	Parameter fixed bound to: 1'b1 
+	Parameter clockwise bound to: 1'b0 
+	Parameter c_clockwise bound to: 1'b1 
+	Parameter no bound to: 1'b0 
+	Parameter yes bound to: 1'b1 
+	Parameter zero bound to: 2'b00 
+	Parameter one bound to: 2'b01 
+	Parameter two bound to: 2'b10 
+	Parameter anime_zero bound to: 3'b000 
+	Parameter anime_one bound to: 3'b001 
+	Parameter anime_two bound to: 3'b010 
+	Parameter anime_three bound to: 3'b011 
+	Parameter anime_four bound to: 3'b100 
+	Parameter anime_five bound to: 3'b101 
+	Parameter pp_0 bound to: 4'b0000 
+	Parameter pp_1 bound to: 4'b0001 
+	Parameter pp_2 bound to: 4'b0011 
+	Parameter pp_3 bound to: 4'b0111 
+	Parameter pp_4 bound to: 4'b1111 
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/User/OneDrive - 清華大學/大二上/必修-邏輯設計實驗/Labs/Lab6/lab6.v:4]
+	Parameter n bound to: 15 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (1#1) [C:/Users/User/OneDrive - 清華大學/大二上/必修-邏輯設計實驗/Labs/Lab6/lab6.v:4]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider__parameterized0' [C:/Users/User/OneDrive - 清華大學/大二上/必修-邏輯設計實驗/Labs/Lab6/lab6.v:4]
+	Parameter n bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider__parameterized0' (1#1) [C:/Users/User/OneDrive - 清華大學/大二上/必修-邏輯設計實驗/Labs/Lab6/lab6.v:4]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider__parameterized1' [C:/Users/User/OneDrive - 清華大學/大二上/必修-邏輯設計實驗/Labs/Lab6/lab6.v:4]
+	Parameter n bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider__parameterized1' (1#1) [C:/Users/User/OneDrive - 清華大學/大二上/必修-邏輯設計實驗/Labs/Lab6/lab6.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Debounce' [C:/Users/User/OneDrive - 清華大學/大二上/必修-邏輯設計實驗/Labs/Lab6/lab6.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'Debounce' (2#1) [C:/Users/User/OneDrive - 清華大學/大二上/必修-邏輯設計實驗/Labs/Lab6/lab6.v:34]
+INFO: [Synth 8-6157] synthesizing module 'One_Pulse' [C:/Users/User/OneDrive - 清華大學/大二上/必修-邏輯設計實驗/Labs/Lab6/lab6.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'One_Pulse' (3#1) [C:/Users/User/OneDrive - 清華大學/大二上/必修-邏輯設計實驗/Labs/Lab6/lab6.v:61]
+INFO: [Synth 8-6157] synthesizing module 'KeyboardDecoder' [C:/Users/User/OneDrive - 清華大學/大二上/必修-邏輯設計實驗/Labs/Lab6/KeyboardSampleCode/KeyboardSampleCode/KeyboardDecoder.v:1]
+	Parameter INIT bound to: 2'b00 
+	Parameter WAIT_FOR_SIGNAL bound to: 2'b01 
+	Parameter GET_SIGNAL_DOWN bound to: 2'b10 
+	Parameter WAIT_RELEASE bound to: 2'b11 
+	Parameter IS_INIT bound to: 8'b10101010 
+	Parameter IS_EXTEND bound to: 8'b11100000 
+	Parameter IS_BREAK bound to: 8'b11110000 
+INFO: [Synth 8-6157] synthesizing module 'KeyboardCtrl_0' [C:/Users/User/OneDrive - 清華大學/大二上/必修-邏輯設計實驗/Labs/Lab6/project_1/project_1.runs/synth_1/.Xil/Vivado-10408-Neilsons/realtime/KeyboardCtrl_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'KeyboardCtrl_0' (4#1) [C:/Users/User/OneDrive - 清華大學/大二上/必修-邏輯設計實驗/Labs/Lab6/project_1/project_1.runs/synth_1/.Xil/Vivado-10408-Neilsons/realtime/KeyboardCtrl_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'OnePulse' [C:/Users/User/OneDrive - 清華大學/大二上/必修-邏輯設計實驗/Labs/Lab6/KeyboardSampleCode/KeyboardSampleCode/OnePulse.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'OnePulse' (5#1) [C:/Users/User/OneDrive - 清華大學/大二上/必修-邏輯設計實驗/Labs/Lab6/KeyboardSampleCode/KeyboardSampleCode/OnePulse.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/User/OneDrive - 清華大學/大二上/必修-邏輯設計實驗/Labs/Lab6/KeyboardSampleCode/KeyboardSampleCode/KeyboardDecoder.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'KeyboardDecoder' (6#1) [C:/Users/User/OneDrive - 清華大學/大二上/必修-邏輯設計實驗/Labs/Lab6/KeyboardSampleCode/KeyboardSampleCode/KeyboardDecoder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'lab6' (7#1) [C:/Users/User/OneDrive - 清華大學/大二上/必修-邏輯設計實驗/Labs/Lab6/lab6.v:101]

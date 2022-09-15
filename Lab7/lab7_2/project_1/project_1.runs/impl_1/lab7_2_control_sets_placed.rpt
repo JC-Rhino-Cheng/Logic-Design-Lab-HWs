@@ -1,0 +1,86 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Mon Dec  7 14:37:41 2020
+| Host         : Neilsons running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file lab7_2_control_sets_placed.rpt
+| Design       : lab7_2
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |     8 |
+|    Minimum number of control sets                        |     8 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    43 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |     8 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     5 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     1 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              44 |           18 |
+| No           | No                    | Yes                    |              11 |            7 |
+| No           | Yes                   | No                     |              12 |            5 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              10 |            4 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------------+-----------------------+-----------------------------------+------------------+----------------+--------------+
+|                 Clock Signal                |     Enable Signal     |          Set/Reset Signal         | Slice Load Count | Bel Load Count | Bels / Slice |
++---------------------------------------------+-----------------------+-----------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG                              |                       | o_rst/AR[0]                       |                1 |              1 |         1.00 |
+|  slowed_for_monitor_flushing_BUFG           |                       | o_rst/AR[0]                       |                2 |              2 |         1.00 |
+|  slowed_clk_for_button/out[0]               |                       |                                   |                2 |             10 |         5.00 |
+|  slowed_clk_for_updating_shown_content/Q[0] |                       | o_rst/AR[0]                       |                6 |             10 |         1.67 |
+|  clk_IBUF_BUFG                              |                       |                                   |                6 |             10 |         1.67 |
+|  slowed_for_monitor_flushing_BUFG           |                       | vga_instance/pixel_cnt[9]_i_1_n_0 |                3 |             10 |         3.33 |
+|  slowed_for_monitor_flushing_BUFG           | vga_instance/line_cnt | vga_instance/line_cnt[9]_i_1_n_0  |                4 |             10 |         2.50 |
+|  slowed_for_monitor_flushing_BUFG           |                       |                                   |               10 |             24 |         2.40 |
++---------------------------------------------+-----------------------+-----------------------------------+------------------+----------------+--------------+
+
+
